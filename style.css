@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 220, 220);
     padding: 20px 24px;
 }
 
@@ -76,7 +76,7 @@ main img {
 
 footer {
     grid-area: footer;
-    background-color: white;
+    background-color: rgb(255, 220, 220);
     padding: 16px 20px;
 }
 
