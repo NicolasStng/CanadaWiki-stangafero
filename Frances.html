@@ -2,6 +2,7 @@
 <head> 
     <title>Idioma Francés</title>
     <link rel="stylesheet" href="style.css">
+    <script defer="" src="main.js"></script>
 </head>
 <body>
     <div class = "contenedor-wiki">
@@ -12,17 +13,22 @@
 
         <aside>
             <h2>Indice</h2>
-        <ul>
-            <li> <a href="#Datos">Datos</a></li>
-            <li><a href="#Distribucion_geográfica">Distribución geográfica</a></</li>
-            <li><a href="#Dialectos_y_variantes "> Dialectos y variantes</a></</li>
-            <li><a href="#Historia"> Historia</a></</li>
-        </ul>
+            <ul id="indice-automatico"></ul>
+            <div class="panel-apariencia"><h2>Apariencia</h2>
+            <button id="boton-modo" type="button">Modo oscuro</button>
+            <p>Tamaño de texto:</p>
+            <div aria-label="Tamaño del texto" class="botones-tamano" role="group">
+            <button aria-pressed="false" class="boton-tamano" data-tamano="pequeno" type="button">Pequeño</button>
+            <button aria-pressed="true" class="boton-tamano" data-tamano="estandar" type="button">Estándar</button>
+            <button aria-pressed="false" class="boton-tamano" data-tamano="grande" type="button">Grande</button>
+            </div>
+            </div>
         </aside>
 
         <main>
             <h1>Idioma Francés</h1>
 
+            <section>
             <h2 id="Datos">Datos</h2>
         <img src="img/images (3).jfif" alt="Imagen representativa del frances" width="270" height="200">
         <p>El francés (français) es una lengua romance procedente del latín hablado. Pertenece al grupo galorromance y es originario del norte de Francia. Se habla principalmente como primera lengua en Europa, destacándose Francia, Bélgica (en Valonia), Suiza (en Romandía), Mónaco y Luxemburgo, así como en Canadá (principalmente en Quebec). Es uno de los cinco idiomas más hablados en el mundo y es oficial en Europa, América del Norte, el Caribe, América del Sur, África y Oceanía.</p>
@@ -42,18 +48,39 @@
                 En Quebec la mayoría de la población es francófona, siendo el francés la única lengua oficial. Nuevo Brunswick es una provincia bilingüe y Ontario tiene una comunidad francófona muy numerosa con autonomía cultural y lingüística.</p>
             <p>
                 En Luisiana (Estados Unidos) se habla el cajún, un idioma criollo basado en el francés, y en los estados del NE fronterizos con Canadá (Vermont y Maine) un dialecto del francés, el acadiano; y en la República de Haití, aunque el idioma mayoritario en este país es el criollo haitiano. Es hablado también por algunas comunidades de las islas de Dominica, Santa Lucía, Trinidad y Tobago y en la zona fronteriza entre la República Dominicana y Haití (aunque en las islas francófonas del Caribe lo que habla la mayoría de la población son dialectos del francés: creoles y criollo francés). También lo hablan algunas pequeñas comunidades francesas o de origen francés en el resto del Caribe y en la América del Sur hispanohablante, y en la zona fronteriza con la Guayana francesa del estado de Amapá (Brasil). El francés es también el idioma oficial en los territorios de ultramar de Francia de la Guayana Francesa, Guadalupe, Martinica, San Bartolomé, San Martín y San Pedro y Miquelón.</p>
-            <h2 id="Dialectos_y_variantes">Dialectos y variantes</h2>
+            </section>
+            <section>
+                <h2 id="Dialectos_y_variantes">Dialectos y variantes</h2>
             <p>Dentro de la misma Francia, específicamente el francés hablado en París, ha sustituido a las variedades locales de Île-de-France para casi todos los hablantes de la zona petrolera. Las diferencias entre el francés de un joven normando y un joven parisino, por ejemplo, en la mayoría de los casos serán mínimas en comparación con la diversidad que ha existido históricamente en Francia en la propia región de Île-de-France.</p>
             <p>
                 El francés de esta región, elegido para codificar la lengua, fue durante mucho tiempo la norma del francés para todos los francófonos del mundo, y continúa ejerciendo una influencia sin igual en la lengua francesa en su conjunto. Es por esta razón que los hablantes principiantes de francés a menudo lo toman como un punto de referencia contra el cual se pueden comparar otras variedades de francés. Sin embargo, ciertas evoluciones recientes del francés de Francia en comparación con el estándar tradicional de francés, que son aceptados en Francia e incluso ratificados en los diccionarios (de los cuales casi todos están publicados en Francia), no pasan desapercibidos en Canadá.</p>
             <p>
                 El francés de esta región, elegido para codificar la lengua, fue durante mucho tiempo la norma del francés para todos los francófonos del mundo, y continúa ejerciendo una influencia sin igual en la lengua francesa en su conjunto. Es por esta razón que los hablantes principiantes de francés a menudo lo toman como un punto de referencia contra el cual se pueden comparar otras variedades de francés. Sin embargo, ciertas evoluciones recientes del francés de Francia en comparación con el estándar tradicional de francés, que son aceptados en Francia e incluso ratificados en los diccionarios (de los cuales casi todos están publicados en Francia), no pasan desapercibidos en Canadá.</p>
-            <h2 id="Historia">Historia</h2>
+            </section>
+            <section>
+                <h2 id="Historia">Historia</h2>
             <p> El territorio de lo que hoy es Francia empezó a ser poblado por los galos alrededor del siglo VII a. C., los cuales hablaban idiomas celtas que no poseían escritura. Hacia el suroeste, los aquitanos hablaban probablemente una lengua precursora del vasco, pero desconocían la escritura. En la zona de Massilia (la actual Marsella) los habitantes de las colonias griegas hablaban y escribían en este idioma, pero no lo difundieron más allá de sus colonias.</p>
             <p>
                 Todos esos idiomas y otros hablados en la antigua Galia seguramente fueron desapareciendo con la colonización romana y la progresiva implantación del latín. Con el declive del Imperio romano, una serie de pueblos de origen germánico llegaron a la Galia romana. Entre ellos, dos se establecieron de modo más consolidado: los francos en el norte y los visigodos en el sur, con el río Loira como frontera. A pesar de que ambos pueblos hablaban sus propias lenguas, pronto adoptaron el latín hablado por la población local. No obstante, el idioma hablado por los francos está en el origen del neerlandés, que es un idioma germánico hablado hoy en día en sus distintas variedades en los Países Bajos, donde se le denomina neerlandés, en parte de Bélgica y en el extremo norte de Francia.</p>
             <p>
                 Durante mucho tiempo, el idioma hablado en el norte de Galia (en realidad ya Francia) es un latín más o menos evolucionado, con grandes influencias, fundamentalmente fonéticas del idioma germánico hablado por los francos. Al sur, la evolución es diferente, por lo que poco a poco se van diferenciando dos lenguas con una frontera que en principio se marcará en el Loira, aunque a lo largo de la historia irá desplazándose cada vez más hacia el sur. Al sur de esa frontera se hablaba la lengua de oc. La línea de separación iba del Macizo Central a la desembocadura del Loira en Nantes.</p>
+            </section>
+            <section>
+                <h2 id="Discusion">Discusión final</h2>
+                <p>
+                    Deja tu opinión sobre el artículo.
+                </p>
+                <form id="formulario-discusion" novalidate="">
+                    <label for="nombre-comentario">Nombre</label>
+                    <input autocomplete="name" id="nombre-comentario" name="nombre" type="text"/>
+                    <label for="texto-comentario">Comentario</label>
+                    <textarea id="texto-comentario" maxlength="200" name="comentario" rows="4"></textarea>
+                    <p aria-live="polite" id="contador-caracteres">0 / 200</p>
+                    <button type="submit">Enviar comentario</button>
+                    <p aria-live="polite" id="mensaje-discusion" role="status"></p>
+                </form>
+                <ul aria-label="Comentarios publicados" id="lista-comentarios"></ul>
+            </section>
         </main>
         
         <footer>

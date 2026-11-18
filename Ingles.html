@@ -2,6 +2,7 @@
 <head>
   <title>Idioma Inglés</title>
   <link rel="stylesheet" href="style.css">
+  <script defer="" src="main.js"></script>
 </head>
 <body>
   <div class = "contenedor-wiki">
@@ -12,16 +13,21 @@
     
     <aside>
       <h2>Indice</h2>
-      <ul>
-        <li> <a href="#Datos">Datos</a></li>
-        <li><a href="#Etimologia">Etimología</a></</li>
-        <li><a href="#Historia">Historia</a></</li>
-        <li><a href="#Origenes">Orígenes</a></</li>
-      </ul>
+      <ul id="indice-automatico"></ul>
+      <div class="panel-apariencia"><h2>Apariencia</h2>
+      <button id="boton-modo" type="button">Modo oscuro</button>
+      <p>Tamaño de texto:</p>
+      <div aria-label="Tamaño del texto" class="botones-tamano" role="group">
+      <button aria-pressed="false" class="boton-tamano" data-tamano="pequeno" type="button">Pequeño</button>
+      <button aria-pressed="true" class="boton-tamano" data-tamano="estandar" type="button">Estándar</button>
+      <button aria-pressed="false" class="boton-tamano" data-tamano="grande" type="button">Grande</button>
+      </div>
+      </div>
     </aside>
 
     <main>
       <h1>Idioma Inglés</h1>
+      <section>
       <h2 id="Datos">Datos</h2>
       <img src="img/donde-estudiar-ingles-en-bogota-28-cursos-e-institutos.jpg" alt="Imagen representativa del ingles" width="270" height="200">
       <p>El idioma inglés (English; pronunciación en inglés: /ɪŋglɪʃ/) es una lengua germánica occidental perteneciente a la familia de lenguas indoeuropeas, que surgió en los reinos anglosajones de Inglaterra. El inglés es el idioma más hablado en el mundo así como el tercer idioma con más hablantes nativos, después del chino mandarín y el español.</p>
@@ -39,6 +45,8 @@
         Debido a la importante incorporación de palabras de varias lenguas europeas a lo largo de la historia, el inglés moderno contiene un vocabulario muy amplio. El Oxford English Dictionary contiene más de 250 000 palabras distintas, sin incluir muchos términos técnicos, científicos y de jergas.</p>
       <p>
         Asimismo, a fecha de 2023, es considerada la lengua franca.</p>
+      </section>
+      <section>
       <h2 id="Etimologia">Etimología</h2>
       <p>La palabra inglés deriva de los anglos, o angleis en francés antiguo, una de las tribus germánicas, originaria del área de Jutlandia, en las actuales Dinamarca y norte de Alemania, que invadieron Inglaterra tras la caída del Imperio romano en el siglo V.</p>
       <h2 id="Historia">Historia</h2>
@@ -49,10 +57,29 @@
         Por una razón similar en muchos de los países europeos se hablan lenguas derivadas del latín, que fue el idioma oficial del Imperio romano. Y por estas tendencias, sobre todo las élites intelectuales pasaron del latín al francés, luego al inglés tras el final de la Segunda Guerra Mundial en septiembre de 1945 y se prevé que el inglés disminuya en las siguientes décadas frente a otros idiomas como el español, el árabe o el chino mandarín, entre otros.</p>
       <p>
         Actualmente existen millones de personas que también utilizan como alternativa una lengua auxiliar neutral, sencillas por diseño y no condicionadas a cambios en las potencias mundiales. Sin embargo, según el Informe Grin, que concluye que el uso del esperanto sería la mejor solución a medio y largo plazo para la Unión Europea y sus ciudadanos, es cierto que a corto plazo supondría una inversión o gasto en campañas informativas y en los cambios del proceso de enseñanza y aprendizaje.</p>
+      </section>
+      <section>
       <h2 id="Origenes">Orígenes</h2>
       <p>El inglés desciende del idioma que hablaban las tribus germánicas que migraron desde las costas del mar del Norte, en lo que actualmente son los Países Bajos, el norte de Alemania y parte de Dinamarca, hacia las islas británicas —un territorio de la misma extensión del que acabaría por ser denominado Inglaterra (Englaland 'tierra de los anglos')—. Entre las tribus que migraron, había contingentes de anglos, frisones, jutos y sajones. Su lengua se denomina anglosajón antiguo.</p>
       <p>
         Según la Crónica anglosajona, alrededor del año 449, Vortigern, rey de las islas británicas, extendió una invitación a unos anglos dirigidos por Hengest y Horsa para que le ayudaran contra los pictos. A cambio, a los anglosajones se les concederían tierras en el sureste. Se buscó más ayuda, y en respuesta acudieron anglos, sajones y jutos. La crónica documenta la subsiguiente llegada de «colonos», que finalmente formaron siete reinos: Northumbria, Mercia, Anglia Oriental, Kent, Essex, Sussex y Wessex. Sin embargo, a juicio de la mayoría de los estudiosos modernos, esta historia anglosajona es legendaria y de motivación política.</p>
+      </section>
+      <section>
+        <h2 id="Discusion">Discusión final</h2>
+          <p>
+            Deja tu opinión sobre el artículo.
+          </p>
+          <form id="formulario-discusion" novalidate="">
+            <label for="nombre-comentario">Nombre</label>
+            <input autocomplete="name" id="nombre-comentario" name="nombre" type="text"/>
+            <label for="texto-comentario">Comentario</label>
+            <textarea id="texto-comentario" maxlength="200" name="comentario" rows="4"></textarea>
+            <p aria-live="polite" id="contador-caracteres">0 / 200</p>
+            <button type="submit">Enviar comentario</button>
+            <p aria-live="polite" id="mensaje-discusion" role="status"></p>
+          </form>
+          <ul aria-label="Comentarios publicados" id="lista-comentarios"></ul>
+      </section>
     </main>
 
     <footer>
