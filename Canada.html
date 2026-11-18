@@ -101,10 +101,20 @@
             </p>
             </section>
             <section>
-                <h2>Discusión final</h2>
+                <h2 id="Discusion">Discusión final</h2>
                 <p>
                     Deja tu opinión sobre el artículo.
                 </p>
+                <form id="formulario-discusion" novalidate="">
+                    <label for="nombre-comentario">Nombre</label>
+                    <input autocomplete="name" id="nombre-comentario" name="nombre" type="text"/>
+                    <label for="texto-comentario">Comentario</label>
+                    <textarea id="texto-comentario" maxlength="200" name="comentario" rows="4"></textarea>
+                    <p aria-live="polite" id="contador-caracteres">0 / 200</p>
+                    <button type="submit">Enviar comentario</button>
+                    <p aria-live="polite" id="mensaje-discusion" role="status"></p>
+                </form>
+                <ul aria-label="Comentarios publicados" id="lista-comentarios"></ul>
             </section>
             </main>
 

@@ -98,7 +98,9 @@ footer li {
     margin-top: 28px;
 }
 
-.panel-apariencia button {
+.panel-apariencia button,
+#formulario-discusion button,
+.boton-borrar {
     border: 1px solid #777;
     border-radius: 5px;
     padding: 8px 12px;
@@ -169,6 +171,51 @@ main button {
     font-size: 1em;
 }
 
+#formulario-discusion {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 600px;
+}
+
+#formulario-discusion input,
+#formulario-discusion textarea {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #fff;
+    color: #222;
+    font-family: inherit;
+}
+
+#formulario-discusion .campo-invalido {
+    border: 2px solid #c93434;
+}
+
+#mensaje-discusion {
+    min-height: 1.3em;
+}
+
+#mensaje-discusion.mensaje-error {
+    color: #ad2222;
+    font-weight: bold;
+}
+
+#lista-comentarios {
+    list-style: none;
+    padding-left: 0;
+}
+
+#lista-comentarios li {
+    border-top: 1px solid #aaa;
+    padding: 12px 0;
+}
+
+#lista-comentarios p {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
 body.modo-oscuro {
     background-color: #171c22;
     color: #f3f3f3;
@@ -200,4 +247,15 @@ body.modo-oscuro button {
 body.modo-oscuro .boton-tamano.seleccionado {
     background-color: #95c9fa;
     color: #12263d;
+}
+
+body.modo-oscuro #formulario-discusion input,
+body.modo-oscuro #formulario-discusion textarea {
+    background-color: #1b2530;
+    color: #fff;
+    border-color: #92a0b0;
+}
+
+body.modo-oscuro #mensaje-discusion.mensaje-error {
+    color: #ffb6b6;
 }
