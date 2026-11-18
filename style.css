@@ -94,46 +94,90 @@ footer li {
     margin: 0;
 }
 
-/* Apariencia y elementos interactivos */
-.panel-apariencia { margin-top: 28px; }
-.panel-apariencia button, #formulario-discusion button, .boton-borrar {
-    border: 1px solid #777; border-radius: 5px; padding: 8px 12px;
-    background-color: #f1f1f1; color: #222; cursor: pointer;
+.panel-apariencia {
+    margin-top: 28px;
+}
+
+.panel-apariencia button {
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    color: #222;
+    cursor: pointer;
     font: inherit;
 }
-#boton-modo { margin-bottom: 10px; }
-.botones-tamano { display: flex; flex-wrap: wrap; gap: 5px; }
-.boton-tamano.seleccionado { background-color: #305e85; color: #fff; border-color: #305e85; }
-.seccion-articulo { margin-bottom: 16px; }
-.seccion-articulo > h2 { cursor: pointer; }
-.seccion-articulo > h2::before { content: "▾ "; }
-.seccion-articulo.plegada > h2::before { content: "▸ "; }
-.seccion-articulo.plegada > :not(h2) { display: none; }
-/* Tamaños relativos: alcanzan párrafos, listas y encabezados del artículo. */
-main.texto-pequeno { font-size: .85rem; }
-main.texto-estandar { font-size: 1rem; }
-main.texto-grande { font-size: 1.22rem; }
-main h2 { font-size: 1.55em; }
-main p, main li, main label, main input, main textarea, main button { font-size: 1em; }
-#formulario-discusion { display: flex; flex-direction: column; gap: 7px; max-width: 600px; }
-#formulario-discusion input, #formulario-discusion textarea {
-    border: 1px solid #999; border-radius: 4px; padding: 8px;
-    background-color: #fff; color: #222; font-family: inherit;
+
+#boton-modo {
+    margin-bottom: 10px;
 }
-#formulario-discusion .campo-invalido { border: 2px solid #c93434; }
-#mensaje-discusion { min-height: 1.3em; }
-#mensaje-discusion.mensaje-error { color: #ad2222; font-weight: bold; }
-#lista-comentarios { list-style: none; padding-left: 0; }
-#lista-comentarios li { border-top: 1px solid #aaa; padding: 12px 0; }
-#lista-comentarios p { white-space: pre-wrap; overflow-wrap: anywhere; }
-/* El modo oscuro se aplica a toda la wiki por clase CSS, no por estilos en JS. */
-body.modo-oscuro { background-color: #171c22; color: #f3f3f3; }
-body.modo-oscuro header, body.modo-oscuro aside,
-body.modo-oscuro main, body.modo-oscuro footer { background-color: #29313c; color: #f3f3f3; }
-body.modo-oscuro a { color: #a9d5ff; }
-body.modo-oscuro main h2, body.modo-oscuro aside h2 { border-color: #667181; }
-body.modo-oscuro button { background-color: #465467; color: #fff; border-color: #8796a7; }
-body.modo-oscuro .boton-tamano.seleccionado { background-color: #95c9fa; color: #12263d; }
-body.modo-oscuro #formulario-discusion input,
-body.modo-oscuro #formulario-discusion textarea { background-color: #1b2530; color: #fff; border-color: #92a0b0; }
-body.modo-oscuro #mensaje-discusion.mensaje-error { color: #ffb6b6; }
+
+.botones-tamano {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.boton-tamano.seleccionado {
+    background-color: #305e85;
+    color: #fff;
+    border-color: #305e85;
+}
+
+main.texto-pequeno {
+    font-size: 0.85rem;
+}
+
+main.texto-estandar {
+    font-size: 1rem;
+}
+
+main.texto-grande {
+    font-size: 1.22rem;
+}
+
+main h2 {
+    font-size: 1.55em;
+}
+
+main p,
+main li,
+main label,
+main input,
+main textarea,
+main button {
+    font-size: 1em;
+}
+
+body.modo-oscuro {
+    background-color: #171c22;
+    color: #f3f3f3;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro aside,
+body.modo-oscuro main,
+body.modo-oscuro footer {
+    background-color: #29313c;
+    color: #f3f3f3;
+}
+
+body.modo-oscuro a {
+    color: #a9d5ff;
+}
+
+body.modo-oscuro main h2,
+body.modo-oscuro aside h2 {
+    border-color: #667181;
+}
+
+body.modo-oscuro button {
+    background-color: #465467;
+    color: #fff;
+    border-color: #8796a7;
+}
+
+body.modo-oscuro .boton-tamano.seleccionado {
+    background-color: #95c9fa;
+    color: #12263d;
+}
