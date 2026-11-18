@@ -124,6 +124,26 @@ footer li {
     border-color: #305e85;
 }
 
+main section {
+    margin-bottom: 16px;
+}
+
+main section > h2 {
+    cursor: pointer;
+}
+
+main section > h2::before {
+    content: "▾ ";
+}
+
+main section.plegada > h2::before {
+    content: "▸ ";
+}
+
+main section.plegada > :not(h2) {
+    display: none;
+}
+
 main.texto-pequeno {
     font-size: 0.85rem;
 }

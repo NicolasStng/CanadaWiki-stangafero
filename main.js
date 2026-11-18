@@ -55,3 +55,10 @@ botonesTamano.forEach(function (boton) {
     });
   });
 });
+
+// Permite plegar y desplegar las secciones del artículo
+subtitulos.forEach(function (subtitulo) {
+  subtitulo.addEventListener('click', function () {
+    subtitulo.parentElement.classList.toggle('plegada');
+  });
+});
